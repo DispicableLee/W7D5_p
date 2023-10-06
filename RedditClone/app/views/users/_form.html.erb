@@ -1,0 +1,10 @@
+<% action = (action == :new ? users_url : user_url(@user.id)) %>
+<% method = (action == :new) ? :POST : :PATCH %>
+<% submit_value = (action == :new) ? "Sign Up" : "Update Info" %>
+
+<form action="<%= action %>" method="<%= method %>">
+    <input type="text">
+
+<input type="submit" value="<%= submit_value %>">
+
+</form>

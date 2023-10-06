@@ -1,0 +1,14 @@
+<h1>All Users</h1>
+
+<% @users.each do |user| %>
+    <%= user.username %>
+<% end %>
+
+
+
+<br>
+
+<a href="<%= new_sub_url %>">New Sub</a>
+
+<a href="<%= subs_url %>">All Subs</a>
+
